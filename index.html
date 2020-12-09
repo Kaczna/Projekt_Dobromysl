@@ -1,0 +1,192 @@
+---
+layout: layouts/sablona.njk
+title: Dobromysl, z. ú. | Pomáháme lidem s hendikepem
+menu: uvod
+heroimg: /images/home_page.png
+heroheadline: Dobromysl
+heromotto: Pomáháme lidem s hendikepem
+---
+
+<section class="block">
+  <div class="block__content">
+    <div class="block__text">
+      <h1>Jak pomáháme?</h1>
+      <p>
+        Poskytujeme profesionální sociální služby dětem, mladistvým i dospělým s
+        mentálním a kombinovaným postižením z Berouna a širokého okolí. Vyberte
+        si z nabízených služeb pro vás tu nejvhodnější.
+      </p>
+    </div>
+
+    <div class="block__carousel">
+      <div class="block__item">
+        <a class="block__link" href="/socialnisluzby/dennistacionar">
+          <img
+            class="block__icon"
+            src="/images/denni_stacionar.svg"
+            alt="Denní stacionář"
+          />
+          <div class="block__description block__description--carousel">Denní stacionář</div>
+        </a>
+      </div>
+      <div class="block__item">
+        <a class="block__link" href="/socialnisluzby/odlehcovacisluzby">
+          <img
+            class="block__icon"
+            src="/images/odlehcovaci_sluzby.svg"
+            alt="Odlehčovací služby"
+          />
+          <div class="block__description block__description--carousel">Odlehčovací služby</div></a
+        >
+      </div>
+      <div class="block__item">
+        <a class="block__link" href="/socialnisluzby/osobniasistence">
+          <img
+            class="block__icon"
+            src="/images/osobni_asistence.svg"
+            alt="Osobní asistence"
+          />
+          <div class="block__description block__description--carousel">Osobní asistence</div></a
+        >
+      </div>
+      <div class="block__item">
+        <a class="block__link" href="/socialnisluzby/terapeutickedilny">
+          <img
+            class="block__icon"
+            src="/images/terapeuticke_dilny.svg"
+            alt="Sociálně terapeutické dílny"
+          />
+          <div class="block__description block__description--carousel">Sociálně terapeutické dílny</div></a
+        >
+      </div>
+      <div class="block__item">
+        <a class="block__link" href="/doplnkovesluzby/svoz">
+          <img
+            class="block__icon"
+            src="/images/svoz.svg"
+            alt="Svoz bezbariérovým vozem"
+          />
+          <div class="block__description block__description--carousel">Svoz bezbariérovým vozem</div></a
+        >
+      </div>
+      <div class="block__item">
+        <a class="block__link" href="/doplnkovesluzby/aktivityterapie">
+          <img
+            class="block__icon"
+            src="/images/aktivity_terapie.svg"
+            alt="Aktivity a terapie"
+          />
+          <div class="block__description block__description--carousel">Aktivity a terapie</div></a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="block__content">
+    <div class="block__text">
+      <h1>Jak nás můžete podpořit?</h1>
+      <p>
+        Chcete podpořit rozvoj poskytovaných služeb v Dobromysli? Vyberte si
+        způsob podpory, který vám nejvíce vyhovuje.
+      </p>
+    </div>
+
+    <div class="block__fundraising">
+      <div class="block__item">
+        <a class="block__link" href="/podpora">
+          <img
+            class="block__icon"
+            src="/images/financni_dar.svg"
+            alt="finanční dar"
+          />
+          <div class="block__description" block>Finanční dar</div>
+        </a>
+      </div>
+
+      <div class="block__item">
+        <a class="block__link" href="/podpora">
+          <img
+            class="block__icon"
+            src="/images/vecny_dar.svg"
+            alt="věcný dar"
+          />
+          <div class="block__description">Věcný dar</div></a
+        >
+      </div>
+
+      <div class="block__item">
+        <a class="block__link" href="/podpora">
+          <img
+            class="block__icon"
+            src="/images/dobrovolnictvi.svg"
+            alt="dobrovolnictví"
+          />
+          <div class="block__description">Dobrovolnictví</div></a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="partners block">
+  <div class="block__text">
+    <h1 class="partners__headline">Partneři</h1>
+  </div>
+
+  <div class="partners__content">
+    <div class="partner">
+      <img
+        class="partners__logo"
+        src="/images/logoESF_1.png"
+        alt="EU operační program zaměstnanost"
+      />
+    </div>
+
+    <div class="partner">
+      <img
+        class="partners__logo"
+        src="/images/SK_trans.png"
+        alt="Středočeský kraj"
+      />
+    </div>
+  </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="/slick/slick.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $(".block__carousel").slick({
+      arrows: true,
+      dots: true,
+      centerMode: true,
+      centerPadding: "60px",
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            dots: true,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            arrows: true,
+            dots: true,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  });
+</script>

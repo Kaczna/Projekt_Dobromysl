@@ -1,0 +1,70 @@
+---
+layout: layouts/sablona_hero_services.njk
+title: Naši partneři | Dobromysl, z. ú.
+heroimg: /images/podporuje_nas_orez.jpg
+heroheadline: Naši partneři
+---
+
+<div class="services">
+  <section class="block">
+    <h1 class="block__headline">Kdo nás podporuje</h1>
+
+    <h2 class="partners__year">Dárci - 2020</h2>
+
+    <div class="block--grid block">
+      <div class="partners__field">
+        <h3 class="partners__type">Firmy</h3>
+
+        {% for partner in partneri20 %}
+
+        <p class="partners__name">{{ partner.firma }}</p>
+
+        {% endfor %}
+      </div>
+
+      <div class="partners__field">
+        <h3 class="partners__type">Obce / města</h3>
+
+        {% for partner in partneri20 %}
+
+        <p class="partners__name">{{ partner.obec }}</p>
+
+        {% endfor %}
+      </div>
+    </div>
+
+    <h2 class="partners__year">Dárci - 2019</h2>
+
+    <div class="block--grid block">
+      <div class="partners__field">
+        <h3 class="partners__type">Firmy</h3>
+
+        {% for partner in partneri19 %}
+
+        <p class="partners__name">{{ partner.firma }}</p>
+
+        {% endfor %}
+      </div>
+
+      <div class="partners__field">
+        <h3 class="partners__type">Obce / města</h3>
+
+        {% for partner in partneri19 %}
+
+        <p class="partners__name">{{ partner.obec }}</p>
+
+        {% endfor %}
+      </div>
+
+      <div class="partners__filed">
+        <h3 class="partners__type">Fyzické osoby</h3>
+
+        {% for partner in partneri19 %}
+
+        <p class="partners__name">{{ partner.osoby }}</p>
+
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

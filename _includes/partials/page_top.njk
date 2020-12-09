@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"/>
+
+     
+
+    <link rel="stylesheet" href= "/slick/slick.css"/>
+      <link rel="stylesheet" href="/slick/slick-theme.css"/>
+
+  </head>
+
+  <body>
+
+<header class="header">
+      
+  <div class="header__logo">
+    <a  href="/" class="active {% if menu === 'uvod' %} menu__item--active {% endif %}">
+      <img class="header__image"
+        height="75px"
+        width="206px"
+        src="/images/dobromysl_logo.png"
+        alt="logo dobromysl"/></a>
+        
+  </div>
+
+  
+  <nav class="menu__primary">
+    
+
+    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="menu__toggler">&#9776</label>
+  
+
+    <ul class="menu__list">
+      <li class="menu__item  {% if menu === 'onas' %} menu__item--active {% endif %}">
+        <a class="menu__link" href="/onas">O nás</a>
+      </li>
+      <li class="menu__item  {% if menu === 'socialni sluzby' %} menu__item--active {% endif %}">
+        <a class="menu__link" href="/socialnisluzby"
+          >Sociální služby</a
+        >
+      </li>
+      <li class="menu__item  {% if menu === 'doplnkove sluzby' %} menu__item--active {% endif %}">
+        <a class="menu__link" href="/doplnkovesluzby"
+          >Doplňkové služby</a
+        >
+      </li>
+      <li class="menu__item  {% if menu === 'podpora' %} menu__item--active {% endif %}">
+        <a class="menu__link" href="/podpora"
+          >Jak nás můžete podpořit</a
+        >
+      </li>
+      <li class="menu__item  {% if menu === 'dobrodilo' %} menu__item--active {% endif %}">
+        <a class="menu__link" href="/doplnkovesluzby/dobrodilo">Dobrodílo e&nbsp-&nbspshop</a>
+      </li>
+      <li class="menu__item {% if menu === 'fotogalerie' %} menu__item--active {% endif %}">
+        <a class="menu__link" href="/fotogalerie">Fotogalerie</a>
+      </li>
+    </ul>
+  </nav>
+
+
+<div class="menu-secondary__donate">
+   <a class="menu-secondary__link" href="https://www.darujme.cz/projekt/1202997" target="blank" rel="noopener">darujme.cz</a>
+    
+  </div>
+
+  <div class="menu-secondary__contact">
+    <a class="menu-secondary__link" href="/kontakt">Kontakt</a>
+  </div>
+
+</header>

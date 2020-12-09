@@ -1,0 +1,71 @@
+@import "variables";
+@import "base";
+@import "header";
+@import "hero";
+@import "block";
+@import "partners";
+@import "footer";
+@import "button";
+@import "historie";
+@import "table";
+
+// SLICK CAROUSEL
+
+.slick-prev,
+.slick-next {
+  opacity: 0.8;
+}
+
+.slick-arrow:before {
+  color: $primary !important;
+}
+
+.slick-slide {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.slick-slide img {
+  display: inline;
+  margin: 0;
+}
+
+// LIGHTBOX GALLERY
+
+.block__lightbox {
+  margin-top: 100px;
+  padding: 0px;
+}
+
+.block__lightbox--paragraf {
+  margin: 30px;
+}
+
+.photo__date {
+  text-align: left;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.gallery__image {
+  background-color: #ffffff;
+  padding: 5px;
+  border: 1px solid $primary;
+  width: 100%;
+}
+
+// KE STAŽENÍ
+
+.download {
+  list-style-type: none;
+}
+
+.download__link {
+  text-align: left;
+  color: $primary;
+}

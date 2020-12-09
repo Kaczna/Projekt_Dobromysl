@@ -1,0 +1,17 @@
+{% include "partials/page_top.njk" %}
+
+<div class="hero" style="background-image: url({{ heroimg }});">
+  <div class="hero__container">
+    <div class="hero__content hero__content--services">
+      <h1 class="hero__headline hero__headline--services">
+        {{ heroheadline }}
+      </h1>
+    </div>
+  </div>
+</div>
+
+<main>
+  {{ content | safe }}
+</main>
+
+{% include "partials/page_bottom.njk" %}

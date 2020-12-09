@@ -1,0 +1,267 @@
+// BLOK
+
+.block {
+  text-align: center;
+  padding: 0 30px 0 30px;
+}
+
+.block__text {
+  margin-bottom: 30px;
+}
+
+.block__item {
+  border: 1px solid #f5f5f5;
+  background-color: #fff;
+  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: $radius;
+  display: flex;
+}
+
+.block__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+// O NÁS
+
+.block__link--about {
+  display: flex;
+  flex-direction: column;
+}
+
+// SLUŽBY (DENNÍ STACIONÁŘ, APOD.
+
+.block__link--services {
+  display: flex;
+  flex-direction: column;
+}
+
+.block__other-services {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .block__link--services {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .block__other-services {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .block__link--services {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .block__other-services {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .block__link--services {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .block__other-services {
+    margin-bottom: 0;
+  }
+}
+
+.block__other-services,
+.block__price {
+  text-decoration: none;
+}
+
+.block__open-hours {
+  list-style-type: none;
+  padding: 0;
+}
+
+.block__icon {
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 0 30px;
+  border-radius: 10px 10px 0 0;
+  flex: 1 1 70%;
+}
+
+.block__icon--about {
+  padding: 0;
+  margin: 0;
+}
+
+.block__icon--services {
+  width: 70%;
+}
+
+@media screen and (min-width: 600px) {
+  .block__icon--services {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .block__icon--services {
+    width: 70%;
+  }
+}
+
+.block__description {
+  background-color: #f5f5f5;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  padding: 20px 5px;
+  border-radius: 0 0 10px 10px;
+  flex: 1 1 30%;
+}
+
+@media screen and (min-width: 550px) {
+  .block__description--carousel {
+    min-height: 90px;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .block__description--carousel {
+    min-height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block__description--carousel {
+    min-height: 90px;
+  }
+}
+
+@media screen and (min-width: 904px) {
+  .block__description--carousel {
+    min-height: auto;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .block__fundraising,
+  .block__about,
+  .block__social,
+  .block__complementary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .block__item {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .block__item {
+    flex: 0 0 calc((100% - 40px) / 3);
+  }
+}
+
+// BLOK, NABÍZENÉ SLUŽBY - SOCIÁLNÍ, DOPLŇKOVÉ, O NÁS
+
+.services {
+  margin-top: -150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  max-width: 1100px;
+  z-index: 1000;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0.5px 0.5px 0.5px;
+}
+
+.block__headline {
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+
+.block__paragraf {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .block__paragraf {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .block__paragraf--info {
+    text-align: center;
+  }
+}
+
+// KONTAKTY
+
+.block__contact {
+  text-align: left;
+}
+
+.block__map {
+  padding: 0;
+}
+
+.block__photo {
+  max-width: 100%;
+  border-radius: $radius;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .block__contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .block__main-contact {
+    flex: 0 0 50%;
+  }
+
+  .block__field {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: top;
+    margin: 0;
+    padding: 30px;
+    align-items: top;
+  }
+
+  .block__field--contact {
+    align-items: center;
+  }
+
+  .block__field-description {
+    flex: 0 0 50%;
+    padding: 10px;
+  }
+
+  .block__left {
+    order: 1;
+  }
+
+  .block__right {
+    order: 2;
+  }
+
+  .block--underline {
+    border-bottom: 1px solid $primary;
+    align-items: center;
+  }
+}
