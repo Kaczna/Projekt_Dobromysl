@@ -102,6 +102,7 @@
   width: 70%;
 }
 
+
 @media screen and (min-width: 600px) {
   .block__icon--services {
     width: 100%;
@@ -150,9 +151,16 @@
 }
 
 @media screen and (min-width: 500px) {
-  .block__fundraising,
+
   .block__about,
-  .block__social,
+  .block__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+
+  .block__fundraising,
   .block__complementary {
     display: flex;
     flex-wrap: wrap;
@@ -186,15 +194,20 @@
 .block__headline {
   padding-top: 40px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.block__headline--info {
+  font-size: 18px;
 }
 
 .block__paragraf {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 @media screen and (min-width: 600px) {
   .block__paragraf {
-    text-align: left;
     margin-left: 20px;
   }
 }
@@ -238,7 +251,7 @@
     justify-content: space-around;
     text-align: center;
     align-items: top;
-    margin: 0;
+    // margin: 0;
     padding: 30px;
     align-items: top;
   }
