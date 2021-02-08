@@ -63,7 +63,21 @@
         <a class="menu__link" href="/doplnkovesluzby/dobrodilo">Dobrodílo e&nbsp-&nbspshop</a>
       </li>
       <li class="menu__item {% if menu === 'fotogalerie' %} menu__item--active {% endif %}">
-        <a class="menu__link" href="/fotogalerie">Fotogalerie</a>
+        <div class="dropdown">
+        <a onclick="myFunction()" class="menu__link dropbtn" href="/fotogalerie">Fotogalerie</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">2021</a>
+          <a href="#">2020</a>
+          <a href="#">2019</a>
+          <a href="#">2018</a>
+          <a href="#">2017</a>
+          <a href="#">2016</a>
+          <a href="#">2015</a>
+          <a href="#">2014</a>
+          <a href="#">2013</a>
+          <a href="#">2012</a>
+        </div>
+      </div>
       </li>
     </ul>
   </nav>
@@ -78,4 +92,27 @@
     <a class="menu-secondary__link" href="/kontakt">Kontakt</a>
   </div>
 
+
+
+<script>
+  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </header>
