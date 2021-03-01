@@ -22,12 +22,12 @@
 
 //PARTNEŘI KDO NÁS PODPORUJE
 
-.block--grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  text-align: left;
-}
+// .block--grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+//   gap: 20px;
+//   text-align: left;
+// }
 
 .partners__year {
   text-align: left;
@@ -38,6 +38,24 @@
 .partners__name {
   line-height: 1;
   
+}
+
+.partners__type {
+  text-align: left;
+}
+
+.partners__field {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  
+}
+
+.partners__content--name {
+  justify-items: left;
+  align-items: start;
+  text-align: left;
+  font-size: 14px;
 }
 
 
