@@ -1,19 +1,21 @@
 [
     { "firma": "Avast Software s.r.o." },
+    { "firma": "BitDefender, LLC" },
     { "firma": "ČSOB Asset Management, a.s." },
     { "firma": "Cymedica, spol. s r.o." },
+    { "firma": "iNEPRO revize s.r.o." },
     { "firma": "Koberce Trend (Limex ČR, s.r.o.)" },
     { "firma": "LMC s.r.o." },
     { "firma": "M+H, Míča a Harašta s.r.o. (Saloos)" },
     { "firma": "Nadace ČEZ" },
     { "firma": "Nadace Ikea" },
     { "firma": "RGT s.r.o." },
+    { "firma": "Tart s.r.o." },
     { "firma": "TEZA, spol. s r.o." },
-    { "firma": "Tvořivý ráj (Hořovice)" },
+    { "firma": "Tvořivý ráj (Hořovice)" }
     
 
-    { "obec": "KRAJSKÝ ÚŘAD STŘEDOČESKÉHO KRAJE" },
-    { "obec": "Obec Osek" }
+    
     
     
 ]

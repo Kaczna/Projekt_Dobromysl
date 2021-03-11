@@ -14,51 +14,32 @@ heromotto: Děkujeme všem dárcům
 
     <h2 class="partners__year">Dárci - 2021</h2>
 
-    <!-- <div class="block--grid block">
-      <div class="partners__field"> -->
-        <h3 class="partners__type">Firmy</h3>
-
-        <div class="partners__field">
-          <span class="partners__content partners__content--name">Avast Software s.r.o.</span>
-          <span class="partners__content partners__content--name">BitDefender, LLC</span>
-            <span class="partners__content partners__content--name">ČSOB Asset Management, a.s.</span>
-            <span class="partners__content partners__content--name">Cymedica, spol. s r.o.</span>
-            <span class="partners__content partners__content--name">iNEPRO revize s.r.o.</span>
-            <span class="partners__content partners__content--name">Koberce Trend (Limex ČR, s.r.o.)</span>
-            <span class="partners__content partners__content--name">LMC s.r.o.</span>
-            <span class="partners__content partners__content--name">M+H, Míča a Harašta s.r.o. (Saloos)</span>
-            <span class="partners__content partners__content--name">Nadace ČEZ</span>
-            <span class="partners__content partners__content--name">Nadace Ikea</span>
-            <span class="partners__content partners__content--name">Nokian Tyres s.r.o.</span>
-            <span class="partners__content partners__content--name">RGT s.r.o.</span>
-            <span class="partners__content partners__content--name">Tart s.r.o.</span>
-            <span class="partners__content partners__content--name">TEZA, spol. s r.o.</span>
-            <span class="partners__content partners__content--name">Tvořivý ráj (Hořovice)</span>
-        </div>
-
-
-        <!-- {% for partner in partneri21 %}
+    <div class="block--grid block">
+      <h3 class="partners__type">Firmy</h3>
+      <div class="partners__field-company"> 
         
-       
 
+        {% for partner in partneri21 %}
+        
+    
         <p class="partners__name">
           {{ partner.firma }}</p>
 
       
-
         {% endfor %}
       </div>
 
-      <div class="partners__field">
-        <h3 class="partners__type">Obce / města</h3>
+      <h3 class="partners__type">Obce / města</h3>
 
-        {% for partner in partneri21 %}
+      <div class="partners__field-city">
+        
+        {% for partner in partneri21_obce %}
 
         <p class="partners__name">{{ partner.obec }}</p>
 
         {% endfor %}
       </div>
-    </div>  -->
+    </div>  
 
     <!-- <h2 class="partners__year">Dárci - 2019</h2>
 
@@ -94,7 +75,26 @@ heromotto: Děkujeme všem dárcům
       </div>
     </div> -->
 
-    <h3 class="partners__type">Obce / města</h3>
+    <!-- 
+        <div class="partners__field">
+          <span class="partners__content partners__content--name">Avast Software s.r.o.</span>
+          <span class="partners__content partners__content--name">BitDefender, LLC</span>
+            <span class="partners__content partners__content--name">ČSOB Asset Management, a.s.</span>
+            <span class="partners__content partners__content--name">Cymedica, spol. s r.o.</span>
+            <span class="partners__content partners__content--name">iNEPRO revize s.r.o.</span>
+            <span class="partners__content partners__content--name">Koberce Trend (Limex ČR, s.r.o.)</span>
+            <span class="partners__content partners__content--name">LMC s.r.o.</span>
+            <span class="partners__content partners__content--name">M+H, Míča a Harašta s.r.o. (Saloos)</span>
+            <span class="partners__content partners__content--name">Nadace ČEZ</span>
+            <span class="partners__content partners__content--name">Nadace Ikea</span>
+            <span class="partners__content partners__content--name">Nokian Tyres s.r.o.</span>
+            <span class="partners__content partners__content--name">RGT s.r.o.</span>
+            <span class="partners__content partners__content--name">Tart s.r.o.</span>
+            <span class="partners__content partners__content--name">TEZA, spol. s r.o.</span>
+            <span class="partners__content partners__content--name">Tvořivý ráj (Hořovice)</span>
+        </div> -->
+
+    <!-- <h3 class="partners__type">Obce / města</h3>
 
     <div class="partners__field">
       <span class="partners__content partners__content--name">KRAJSKÝ ÚŘAD STŘEDOČESKÉHO KRAJE</span>
@@ -102,5 +102,5 @@ heromotto: Děkujeme všem dárcům
         <span class="partners__content partners__content--name">Obec Suchomasty</span>
 
         
-    </div>
+    </div> --> 
   </section>

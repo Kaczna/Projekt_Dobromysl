@@ -22,12 +22,16 @@
 
 //PARTNEŘI KDO NÁS PODPORUJE
 
-// .block--grid {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-//   gap: 20px;
-//   text-align: left;
-// }
+
+
+.partners__name {
+  line-height: 1;
+  justify-items: left;
+  align-items: start;
+  text-align: left;
+  font-size: 14px;
+  
+}
 
 .partners__year {
   text-align: left;
@@ -35,27 +39,26 @@
   border-bottom: 2px solid $primary;
 }
 
-.partners__name {
-  line-height: 1;
-  
-}
+
 
 .partners__type {
   text-align: left;
 }
 
-.partners__field {
+.partners__field-company {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 10px;
   
 }
 
-.partners__content--name {
-  justify-items: left;
-  align-items: start;
-  text-align: left;
-  font-size: 14px;
+.partners__field-city {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
 }
+
+
+
 
 
