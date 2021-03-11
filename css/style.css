@@ -679,13 +679,28 @@ body {
           align-items: center;
 }
 
+.partners__field {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  line-height: 1.3;
+}
+
 .partners__name {
   justify-items: left;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
   text-align: left;
-  font-size: 8px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 400px) {
+  .partners__name {
+    font-size: 12px;
+  }
 }
 
 .partners__year {
@@ -696,15 +711,6 @@ body {
 
 .partners__type {
   text-align: left;
-}
-
-.partners__field {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 10px;
-  line-height: 1.3;
 }
 
 .footer {
