@@ -642,7 +642,9 @@ iframe {
         -ms-flex-align: top;
             align-items: top;
     padding: 30px;
-    align-items: top;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .block__field--contact {
     -webkit-box-align: center;
@@ -890,7 +892,7 @@ table {
 }
 
 table caption {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 0.5em 0 0.75em;
 }
 
@@ -912,7 +914,7 @@ table th {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   table {
     border: 0;
   }
