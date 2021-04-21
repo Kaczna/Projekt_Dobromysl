@@ -23,7 +23,7 @@ heromotto: Vytvořte si nové zážitky
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr id="linkOne">
           <td data-label="Akce">Canisterapeutický pobyt</td>
           <td data-label="Datum">Pá, 14/05/2021 - Ne, 16/05/2021</td>
           <td data-label="Cena">
@@ -35,14 +35,14 @@ heromotto: Vytvořte si nové zážitky
         </tr>
 
 
-        <tr>
+        <tr id="linkTwo">
           <td scope="row" data-label="Akce">Canisterapeutický pobyt</td>
           <td data-label="Datum">Pá, 11/06/2021 - Ne, 13/06/2021</td>
           <td data-label="Cena">obsazeno-bereme náhradníky</td>
           <td data-label="Poznámka">Sv. Štěpán</td>
         </tr>
 
-        <tr>
+        <tr id="linkThree">
           <td data-label="Akce">Úhlavka (letní tábor)</td>
           <td data-label="Datum">Ne, 27/06/2021 - Pá, 02/07/2021</td>
           <td data-label="Cena">
@@ -53,7 +53,7 @@ heromotto: Vytvořte si nové zážitky
           </td>
         </tr>
 
-        <tr>
+        <tr id="linkFour">
           <td data-label="Akce">Pobyt pro lidi s PAS</td>
           <td data-label="Datum">Po, 19/07/2021 - Ne, 25/0ý/2021</td>
           <td data-label="Cena">
@@ -64,7 +64,7 @@ heromotto: Vytvořte si nové zážitky
           </td>
         </tr>
 
-        <tr>
+        <tr id="linkFive">
           <td data-label="Akce">Canisterapeutický pobyt</td>
           <td data-label="Datum">Pá, 03/09/2021 - Ne, 05/09/2021</td>
           <td data-label="Cena">
@@ -77,7 +77,7 @@ heromotto: Vytvořte si nové zážitky
 
       
 
-        <tr>
+        <tr id="linkSix">
           <td data-label="Akce">Pobyt pro lidi s PAS s muzikoterapií</td>
           <td data-label="Datum">Po, 20/09/2021 - Pá, 24/09/2021</td>
           <td data-label="Cena">
@@ -88,7 +88,7 @@ heromotto: Vytvořte si nové zážitky
           </td>
         </tr>
 
-        <tr>
+        <tr id="linkSeven">
           <td data-label="Akce">Pobyt pro lidi s PAS</td>
           <td data-label="Datum">Ne, 10/10/2021 - So, 16/10/2021</td>
           <td data-label="Cena">
@@ -99,7 +99,7 @@ heromotto: Vytvořte si nové zážitky
           </td>
         </tr>
 
-        <tr>
+        <tr id="linkEight">
           <td data-label="Akce">Podzimní pobyt</td>
           <td data-label="Datum">Čt, 11/11/2021 - Ne, 14/11/2021</td>
           <td data-label="Cena">
@@ -110,7 +110,7 @@ heromotto: Vytvořte si nové zážitky
           </td>
         </tr>
 
-        <tr>
+        <tr id="linkNine">
           <td data-label="Akce">Mikulášský pobyt v Dobromysli</td>
           <td data-label="Datum">Pá, 03/12/2021 - Ne, 05/12/2021</td>
           <td data-label="Cena">
@@ -175,6 +175,105 @@ heromotto: Vytvořte si nové zážitky
         </div>
       </div>
     </div>
+
+
+
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+
+    window.setInterval(function(){
+
+        var countOfLinksThatAreValid = 0;
+
+        var current = new Date();
+        
+        var linkOneExpirationDate = new Date("May 16, 2021 23:59:59")
+        var linkTwoExpirationDate = new Date("June 13, 2021 23:59:59")
+        var linkThreeExpirationDate = new Date("July 02, 2021 23:59:59")
+        var linkFourExpirationDate = new Date("July 25, 2021 23:59:59")
+        var linkFiveExpirationDate = new Date("September 05, 2021 23:59:59")
+        var linkSixExpirationDate = new Date("September 24, 2021 23:59:59")
+        var linkSevenExpirationDate = new Date("October 16, 2021 23:59:59")
+        var linkEightExpirationDate = new Date("November 14, 2021 23:59:59")
+        var linkNineExpirationDate = new Date("December 05, 2021 23:59:59")
+
+        if (current.getTime() <= linkOneExpirationDate.getTime()) {
+            $('#linkOne').show();
+            countOfLinksThatAreValid = countOfLinksThatAreValid + 1;
+        }
+        else {
+            $('#linkOne').hide();
+        }
+
+        if (current.getTime() <= linkTwoExpirationDate.getTime()) {
+            $('#linkTwo').show();
+            countOfLinksThatAreValid = countOfLinksThatAreValid + 1;
+        }
+        else {
+            $('#linkTwo').hide();
+        }
+
+        if (current.getTime() <= linkThreeExpirationDate.getTime()) {
+            $('#linkThree').show();
+            countOfLinksThatAreValid = countOfLinksThatAreValid + 1;
+        }
+        else {
+            $('#linkThree').hide();
+        }
+
+        if (current.getTime() <= linkThreeExpirationDate.getTime()) {
+            $('#linkFour').show();
+            countOfLinksThatAreValid = countOfLinksThatAreValid + 1;
+        }
+        else {
+            $('#linkFour').hide();
+        }
+
+        if (current.getTime() <= linkThreeExpirationDate.getTime()) {
+            $('#linkFive').show();
+            countOfLinksThatAreValid = countOfLinksThatAreValid + 1;
+        }
+        else {
+            $('#linkFive').hide();
+        }
+
+        if (current.getTime() <= linkThreeExpirationDate.getTime()) {
+            $('#linkSix').show();
+            countOfLinksThatAreValid = countOfLinksThatAreValid + 1;
+        }
+        else {
+            $('#linkSix').hide();
+        }
+
+        if (current.getTime() <= linkThreeExpirationDate.getTime()) {
+            $('#linkSeven').show();
+            countOfLinksThatAreValid = countOfLinksThatAreValid + 1;
+        }
+        else {
+            $('#linkSeven').hide();
+        }
+
+        if (current.getTime() <= linkThreeExpirationDate.getTime()) {
+            $('#linkEight').show();
+            countOfLinksThatAreValid = countOfLinksThatAreValid + 1;
+        }
+        else {
+            $('#linkEight').hide();
+        }
+
+        if (current.getTime() <= linkThreeExpirationDate.getTime()) {
+            $('#linkNine').show();
+            countOfLinksThatAreValid = countOfLinksThatAreValid + 1;
+        }
+        else {
+            $('#linkNine').hide();
+        }
+
+                
+    });
+
+
+</script>
 
     
   </section>
