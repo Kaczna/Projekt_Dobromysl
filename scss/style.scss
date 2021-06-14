@@ -61,8 +61,16 @@
 
 // KE STAŽENÍ
 
+.block--grid {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  
+}
+
 .download {
   list-style-type: none;
+  flex: 1 1 50%;
 }
 
 .download__link {
