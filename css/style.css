@@ -702,13 +702,28 @@ iframe {
           align-items: center;
 }
 
-.partners__field {
+.partners__field-company {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 10px;
-  line-height: 1.3;
+}
+
+.partners__field-city {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.partners__field-person {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
 }
 
 .partners__name {
@@ -718,6 +733,7 @@ iframe {
           align-items: start;
   text-align: left;
   font-size: 14px;
+  margin: 0;
 }
 
 @media screen and (max-width: 400px) {

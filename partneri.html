@@ -14,12 +14,12 @@ heromotto: Pomáháme lidem s hendikepem
 
     <h2 class="partners__year">Dárci - 2021</h2>
 
-    <div class="block--grid block">
+
       <h3 class="partners__type">Firmy</h3>
-      <div class="partners__field"> 
+      <div class="partners__field-company"> 
         
 
-        {% for partner in partneri21 %}
+        {% for partner in partneri21_firmy %}
         
     
         <p class="partners__name">
@@ -29,17 +29,33 @@ heromotto: Pomáháme lidem s hendikepem
         {% endfor %}
       </div>
 
+
+
       <h3 class="partners__type">Obce / města</h3>
 
-      <div class="partners__field">
+      <div class="partners__field-city">
         
         {% for partner in partneri21_obce %}
 
-        <p class="partners__name">{{ partner.obec }}</p>
+        <p class="partners__name">
+          {{ partner.obec }}</p>
 
         {% endfor %}
       </div>
-    </div>  
+
+
+      <h3 class="partners__type">Fyzické osoby</h3>
+
+      <div class="partners__field-person">
+        
+        {% for partner in partneri21_osoby %}
+
+        <p class="partners__name">
+          {{ partner.osoba }}</p>
+
+        {% endfor %}
+      </div>
+    
 
     <!-- <h2 class="partners__year">Dárci - 2019</h2>
 
